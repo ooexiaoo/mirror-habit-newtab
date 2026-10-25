@@ -21,7 +21,8 @@
   }
 
   .stage--dashboard .hero {
-    position: static;
+    /* keep the base .hero position (relative) + z-index so the engine menu
+       never sinks under the ledger at tablet widths */
     max-width: 780px;
     margin: 0 auto;
     text-align: center;

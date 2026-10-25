@@ -282,6 +282,11 @@
 
 .hero {
   width: 100%;
+  /* The build-in animation, dashboard's sticky variant, and the later
+     .today sibling otherwise bury the search's engine menu: .hero must paint
+     above the ledger for the dropdown's overhang to be visible. */
+  position: relative;
+  z-index: 2;
   animation: fade-up 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 
