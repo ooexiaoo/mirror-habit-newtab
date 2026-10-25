@@ -4,7 +4,7 @@
   "short_name": "Mirror Habit",
   "version": "0.1.0",
   "description": "A calm new tab with today's habits, weather, and search.",
-  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq2rEgWb9GT1dBhpgG3I3u5zePw4b2tCyue97Mfg8LTtxfomcOcdNOxI55M1SMz7MSVo+cxc93xwdLGeT4dE4bX6W4tS6lQl76i7FKjE5u3Z9mgUYW3spuxM+ZlpAoE81Ao/XBnnbsUZ9OclaqluEKdO0GQHZg6aUubJpSzxUOFNitCfDdxAVvX7QxoG1No2Qp1mW8VtkGNYvgyWfJmffdsLtb4I2EWv4BXGm/Bg/2WGJODymC1+3Ue9SBueCcvBPrvxAeILWtwY0LQgtCjQMO+jrP1OUpTPr6d9hSPIwD/2Z1nK0iyIrr5kUfl47RhCV9BRU6t7orQbcGEGhrrhFpw",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAq2rEgWb9GT1dBhpgG3I3u5zePw4b2tCyue97Mfg8LTtxfomcOcdNOxI55M1SMz7MSVo+cxc93xwdLGeT4dE4bX6W4tS6lQl76i7FKjE5u3Z9mgUYW3spuxM+ZlpAoE81Ao/XBnnbsUZ9OclaqluEKdO0GQHZg6aUubJpSzxUOFNitCfDdxAVvX7QxoG1No2Qp1mW8VtkGNYvgyWfJmffdsLtb4I2EWv4BXGm/Bg/2WGJODymC1+3Ue9SBueCcvBPrvxAeILWtwY0LQgtCjQMO+jrP1OUpTPr6d9hSPIwD/2Z1nK0iyIrr5kUfl47RhCV9BRU6t7orQbcGEGhrrhFpwIDAQAB",
   "minimum_chrome_version": "120",
   "icons": {
     "16": "icons/icon-16.png",
@@ -19,7 +19,11 @@
       "32": "icons/icon-32.png"
     }
   },
-  "permissions": ["storage", "identity", "geolocation"],
+  "permissions": [
+    "storage",
+    "identity",
+    "geolocation"
+  ],
   "host_permissions": [
     "https://*.supabase.co/*",
     "https://api.open-meteo.com/*",
