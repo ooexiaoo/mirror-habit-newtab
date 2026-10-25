@@ -361,6 +361,10 @@
 
 .search {
   position: relative;
+  /* backdrop-filter already makes .search its own stacking context, so the
+     engine menu's z-index never escapes it — lift the whole search above the
+     ledger (which paints later in the DOM). */
+  z-index: 2;
   display: flex;
   align-items: center;
   gap: 9px;
