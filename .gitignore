@@ -1,0 +1,13 @@
+# dependencies
+node_modules/
+
+# builds are committed so people can load the extension without tooling —
+# do not ignore dist/
+dist/.tsbuildinfo
+
+# local env
+.env.local
+
+# logs / misc
+*.log
+.DS_Store

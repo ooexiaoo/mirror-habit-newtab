@@ -1,0 +1,346 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   App themes — the app's 16 themes, token-mapped onto the extension's
+   variables (src/globals.css in the main app is the source of truth).
+
+   Colors/radii/letter-spacing carry over exactly; surfaces stay translucent
+   with the extension's frosted treatment; scene gradients derive from each
+   theme's own background, surface, and accent. Faces come from the same
+   Google Fonts stylesheet the app ships (see newtab.html).
+   ───────────────────────────────────────────────────────────────────────── */
+
+:root[data-theme='default'] {
+  --bg: #faf8f5;
+  --surface-solid: #ffffff;
+  --ink: #2d2a24;
+  --muted: #77716a;
+  --app-border: #d4d0c8;
+  --accent: #3f4a5a;
+  --accent-on: #ffffff;
+  --font-display: 'Geist', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: light;
+}
+
+:root[data-theme='retro-crt'] {
+  --bg: #a9ac8a;
+  --surface-solid: #b4b896;
+  --ink: #20230f;
+  --muted: #3d4028;
+  --app-border: #232715;
+  --accent: #303517;
+  --accent-on: #ffffff;
+  --font-display: 'Silkscreen', var(--font-mono);
+  --font-sans: 'Geist Mono', var(--font-mono);
+  --app-ls: 0.03em;
+  color-scheme: light;
+}
+
+:root[data-theme='swiss-editorial'] {
+  --bg: #f8f8f7;
+  --surface-solid: #ffffff;
+  --ink: #111111;
+  --muted: #6b6b6b;
+  --app-border: #111111;
+  --accent: #000000;
+  --accent-on: #ffffff;
+  --font-display: 'Inter', var(--font-sans);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: -0.02em;
+  color-scheme: light;
+}
+
+:root[data-theme='retro-futurism'] {
+  --bg: #1c1a18;
+  --surface-solid: #24211f;
+  --ink: #f4ecd6;
+  --muted: #a69f8e;
+  --app-border: #e6dfc9;
+  --accent: #fff5dd;
+  --accent-on: #1c1a18;
+  --font-display: 'Orbitron', var(--font-sans);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0.03em;
+  color-scheme: dark;
+}
+
+:root[data-theme='solo-leveling'] {
+  --bg: #05060f;
+  --surface-solid: #0c0f1e;
+  --ink: #f2f0ff;
+  --muted: #7b74b2;
+  --app-border: #1a1545;
+  --accent: #4b3fc4;
+  --accent-on: #f2f0ff;
+  --font-display: 'Cinzel', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0.02em;
+  color-scheme: dark;
+}
+
+:root[data-theme='black-white'] {
+  --bg: #000000;
+  --surface-solid: #111111;
+  --ink: #f5f5f5;
+  --muted: #7e7e7e;
+  --app-border: #333333;
+  --accent: #ffffff;
+  --accent-on: #000000;
+  --font-display: 'Unica One', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: dark;
+}
+
+:root[data-theme='y2k-terminal'] {
+  --bg: #0d0d0d;
+  --surface-solid: #1a1a1a;
+  --ink: #99b300;
+  --muted: #788a00;
+  --app-border: #2a2a2a;
+  --accent: #e2ff00;
+  --accent-on: #0d0d0d;
+  --font-display: 'Press Start 2P', var(--font-mono);
+  --font-sans: 'Space Mono', var(--font-mono);
+  --app-ls: 0.03em;
+  color-scheme: dark;
+}
+
+:root[data-theme='tokyo-blackout'] {
+  --bg: #0a0808;
+  --surface-solid: #150f0f;
+  --ink: #e8e0e0;
+  --muted: #8d7676;
+  --app-border: #2a1515;
+  --accent: #c41c3c;
+  --accent-on: #ffffff;
+  --font-display: 'Cinzel', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0.03em;
+  color-scheme: dark;
+}
+
+:root[data-theme='domain-expansion'] {
+  --bg: #08060e;
+  --surface-solid: #100d1c;
+  --ink: #f0eeff;
+  --muted: #82749e;
+  --app-border: #1f1635;
+  --accent: #9b59ff;
+  --accent-on: #ffffff;
+  --font-display: 'Inter', var(--font-sans);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: dark;
+}
+
+:root[data-theme='shonen-arena'] {
+  --bg: #1a1a1f;
+  --surface-solid: #24242a;
+  --ink: #f0ece4;
+  --muted: #8f8a85;
+  --app-border: #333338;
+  --accent: #e87c3a;
+  --accent-on: #1a1a1f;
+  --font-display: 'Cinzel', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0.01em;
+  color-scheme: dark;
+}
+
+:root[data-theme='mecha-terminal'] {
+  --bg: #0a0a0a;
+  --surface-solid: #141414;
+  --ink: #e0e0e0;
+  --muted: #7e7e7e;
+  --app-border: #333333;
+  --accent: #ff6b2b;
+  --accent-on: #0a0a0a;
+  --font-display: 'Orbitron', var(--font-sans);
+  --font-sans: 'Space Mono', var(--font-mono);
+  --app-ls: 0.03em;
+  color-scheme: dark;
+}
+
+:root[data-theme='sakura-ledger'] {
+  --bg: #fdf8f4;
+  --surface-solid: #ffffff;
+  --ink: #4a3f35;
+  --muted: #7e7064;
+  --app-border: #e8ddd0;
+  --accent: #e8a0b4;
+  --accent-on: #4a3f35;
+  --font-display: 'Geist', var(--font-sans);
+  --font-sans: 'Geist', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: light;
+}
+
+:root[data-theme='genkai-academy'] {
+  --bg: #f5f3ee;
+  --surface-solid: #ffffff;
+  --ink: #1a2a3a;
+  --muted: #6c7074;
+  --app-border: #d4d0c8;
+  --accent: #1e3a5f;
+  --accent-on: #ffffff;
+  --font-display: 'Cinzel', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: light;
+}
+
+:root[data-theme='spirit-parchment'] {
+  --bg: #f0e8d8;
+  --surface-solid: #f8f0e0;
+  --ink: #1a1a1a;
+  --muted: #74675a;
+  --app-border: #d4c4a8;
+  --accent: #2c3e7a;
+  --accent-on: #f0e8d8;
+  --font-display: 'Cinzel', var(--font-display);
+  --font-sans: 'Geist Mono', var(--font-mono);
+  --app-ls: 0.01em;
+  color-scheme: light;
+}
+
+:root[data-theme='idol-bright'] {
+  --bg: #ffffff;
+  --surface-solid: #fafafa;
+  --ink: #2a2040;
+  --muted: #786f8a;
+  --app-border: #e8e0f0;
+  --accent: #e06090;
+  --accent-on: #ffffff;
+  --font-display: 'Playfair Display', var(--font-display);
+  --font-sans: 'Inter', var(--font-sans);
+  --app-ls: 0em;
+  color-scheme: light;
+}
+
+:root[data-theme='eva-01'] {
+  --bg: #2d1066;
+  --surface-solid: #3a1580;
+  --ink: #f0eaff;
+  --muted: #c9a8f0;
+  --app-border: #7b3fd4;
+  --accent: #b8ff1a;
+  --accent-on: #1a0040;
+  --font-display: 'Orbitron', var(--font-sans);
+  --font-sans: 'Space Mono', var(--font-mono);
+  --app-ls: 0.03em;
+  color-scheme: dark;
+}
+
+/* ── Derived tokens, light themes └──────────────────────────────────────── */
+
+:root[data-theme='default'],
+:root[data-theme='retro-crt'],
+:root[data-theme='swiss-editorial'],
+:root[data-theme='sakura-ledger'],
+:root[data-theme='genkai-academy'],
+:root[data-theme='spirit-parchment'],
+:root[data-theme='idol-bright'] {
+  --bg-deep: color-mix(in srgb, var(--bg) 90%, #76634d);
+  --surface: color-mix(in srgb, var(--surface-solid) 62%, transparent);
+  --surface-strong: color-mix(in srgb, var(--surface-solid) 90%, transparent);
+  --ink-soft: color-mix(in srgb, var(--ink) 86%, var(--muted));
+  --faint: color-mix(in srgb, var(--muted) 78%, transparent);
+  --line: color-mix(in srgb, var(--app-border) 55%, transparent);
+  --line-strong: var(--app-border);
+  --danger: #b42318;
+  --danger-bg: color-mix(in srgb, #b42318 10%, transparent);
+  --shadow: 0 22px 70px rgba(52, 42, 30, 0.1), 0 2px 8px rgba(52, 42, 30, 0.04);
+  --shadow-small: 0 8px 28px rgba(52, 42, 30, 0.08);
+  --scene-a: color-mix(in srgb, var(--accent) 10%, var(--bg));
+  --scene-b: color-mix(in srgb, var(--bg) 88%, #76634d);
+  --scene-c: color-mix(in srgb, var(--accent) 14%, var(--surface-solid));
+  --scene-veil: var(--bg);
+}
+
+/* ── Derived tokens, dark themes └───────────────────────────────────────── */
+
+:root[data-theme='retro-futurism'],
+:root[data-theme='solo-leveling'],
+:root[data-theme='black-white'],
+:root[data-theme='y2k-terminal'],
+:root[data-theme='tokyo-blackout'],
+:root[data-theme='domain-expansion'],
+:root[data-theme='shonen-arena'],
+:root[data-theme='mecha-terminal'],
+:root[data-theme='eva-01'] {
+  --bg-deep: color-mix(in srgb, var(--bg) 58%, #000000);
+  --surface: color-mix(in srgb, var(--surface-solid) 62%, transparent);
+  --surface-strong: color-mix(in srgb, var(--surface-solid) 90%, transparent);
+  --ink-soft: color-mix(in srgb, var(--ink) 76%, var(--muted));
+  --faint: color-mix(in srgb, var(--muted) 76%, transparent);
+  --line: color-mix(in srgb, var(--app-border) 60%, transparent);
+  --line-strong: var(--app-border);
+  --danger: #ff8a80;
+  --danger-bg: color-mix(in srgb, #ff8a80 11%, transparent);
+  --shadow: 0 24px 80px rgba(0, 0, 0, 0.34), 0 2px 10px rgba(0, 0, 0, 0.24);
+  --shadow-small: 0 10px 32px rgba(0, 0, 0, 0.25);
+  --scene-a: color-mix(in srgb, var(--accent) 10%, var(--bg));
+  --scene-b: color-mix(in srgb, var(--bg) 72%, #000000);
+  --scene-c: color-mix(in srgb, var(--accent) 9%, var(--bg));
+  --scene-veil: var(--bg);
+}
+
+:root[data-theme='retro-futurism'] .scene__grain,
+:root[data-theme='solo-leveling'] .scene__grain,
+:root[data-theme='black-white'] .scene__grain,
+:root[data-theme='y2k-terminal'] .scene__grain,
+:root[data-theme='tokyo-blackout'] .scene__grain,
+:root[data-theme='domain-expansion'] .scene__grain,
+:root[data-theme='shonen-arena'] .scene__grain,
+:root[data-theme='mecha-terminal'] .scene__grain,
+:root[data-theme='eva-01'] .scene__grain {
+  mix-blend-mode: screen;
+}
+
+/* ── Per-face clock sizing ─────────────────────────────────────────────────
+   The clock's clamp is tuned for Fraunces' narrow figures. Wider display
+   faces shrink so the same digits still fit without wrapping. */
+
+:root[data-theme='y2k-terminal'] .clock {
+  font-size: clamp(1.9rem, 4.9vw, 4.1rem);
+  line-height: 1.25;
+}
+
+:root[data-theme='y2k-terminal'] .stage--dashboard .clock {
+  font-size: clamp(1.7rem, 3.5vw, 3.3rem);
+}
+
+:root[data-theme='retro-crt'] .clock {
+  font-size: clamp(3.3rem, 8vw, 6.8rem);
+  line-height: 0.95;
+}
+
+:root[data-theme='retro-crt'] .stage--dashboard .clock {
+  font-size: clamp(2.8rem, 5.9vw, 5.4rem);
+}
+
+:root[data-theme='retro-futurism'] .clock,
+:root[data-theme='mecha-terminal'] .clock,
+:root[data-theme='eva-01'] .clock {
+  font-size: clamp(4.2rem, 10.2vw, 8.4rem);
+}
+
+:root[data-theme='retro-futurism'] .stage--dashboard .clock,
+:root[data-theme='mecha-terminal'] .stage--dashboard .clock,
+:root[data-theme='eva-01'] .stage--dashboard .clock {
+  font-size: clamp(3.6rem, 6.8vw, 6.7rem);
+}
+
+/* Terminal themes read better without the extension's tight dial tracking. */
+:root[data-theme='y2k-terminal'] .clock,
+:root[data-theme='retro-crt'] .clock {
+  letter-spacing: 0.04em;
+}
+
+/* The greeting follows the display face; a hair of tracking for pixel fonts. */
+:root[data-theme='y2k-terminal'] .greeting,
+:root[data-theme='retro-crt'] .greeting {
+  font-family: var(--font-mono);
+  font-size: clamp(0.9rem, 1.5vw, 1.15rem);
+  letter-spacing: 0.05em;
+}

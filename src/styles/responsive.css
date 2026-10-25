@@ -1,0 +1,557 @@
+/* ─────────────────────────────────────────────────────────────────────────
+   Responsive tuning. The layout should feel composed at every window size.
+   ───────────────────────────────────────────────────────────────────────── */
+
+@media (max-width: 1120px) {
+  .stage--dashboard {
+    gap: 42px;
+  }
+
+  .weather-pill__place {
+    display: none;
+  }
+}
+
+@media (max-width: 960px) {
+  .stage--dashboard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: clamp(40px, 7vh, 74px);
+  }
+
+  .stage--dashboard .hero {
+    position: static;
+    max-width: 780px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .stage--dashboard .hero__date {
+    text-align: center;
+  }
+
+  .stage--dashboard .clock {
+    justify-content: center;
+    font-size: clamp(5.2rem, 12.7vw, 10.4rem);
+  }
+
+  .stage--dashboard .search {
+    margin-left: auto;
+  }
+
+  .stage--dashboard .weather-line {
+    justify-content: center;
+  }
+
+  .stage--dashboard .today {
+    width: 100%;
+    max-width: 860px;
+    margin-top: clamp(38px, 7vh, 68px);
+  }
+}
+
+@media (max-width: 760px) {
+  .frame {
+    padding: 19px 18px 18px;
+  }
+
+  .stage--focus {
+    padding-top: clamp(34px, 6vh, 62px);
+  }
+
+  .clock {
+    font-size: clamp(4.5rem, 19vw, 7rem);
+  }
+
+  .hero__date {
+    margin-bottom: 18px;
+  }
+
+  .greeting {
+    margin-top: 17px;
+    font-size: 1.12rem;
+  }
+
+  .search {
+    height: 53px;
+    margin-top: 25px;
+    padding-left: 15px;
+    border-radius: 15px;
+  }
+
+  .search__input {
+    font-size: 14px;
+  }
+
+  .search__hint,
+  .search__return {
+    display: none;
+  }
+
+  .engine-trigger {
+    height: 38px;
+    padding: 0 6px;
+  }
+
+  .engine-trigger__label {
+    display: none;
+  }
+
+  .engine-menu {
+    right: -3px;
+  }
+
+  .weather-line {
+    gap: 6px 12px;
+    margin-top: 16px;
+  }
+
+  .weather-line__detail + .weather-line__detail::before {
+    margin-right: 5px;
+  }
+
+  .today {
+    padding: 20px 17px;
+    border-radius: 20px;
+  }
+
+  .today::before {
+    left: 17px;
+    right: 17px;
+  }
+
+  .today__head {
+    gap: 12px;
+    padding-bottom: 17px;
+  }
+
+  .today__heading h2 {
+    font-size: 1.55rem;
+  }
+
+  .today__sub {
+    font-size: 10.5px;
+  }
+
+  .progress-ring {
+    display: none;
+  }
+
+  .connect-card {
+    grid-template-columns: 39px minmax(0, 1fr);
+    padding: 17px;
+  }
+
+  .connect-card__icon {
+    width: 39px;
+    height: 39px;
+  }
+
+  .connect-card .button {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    justify-self: start;
+    margin-top: 2px;
+  }
+
+  .connect-card .text-link {
+    grid-column: 1 / -1;
+  }
+
+  .habit-row {
+    grid-template-columns: 27px minmax(0, 1fr) auto;
+    gap: 10px;
+    padding: 12px 5px;
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+
+  .habit-check {
+    width: 27px;
+    height: 27px;
+  }
+
+  .habit-name {
+    font-size: 12.5px;
+  }
+
+  .habit-meta {
+    font-size: 8px;
+    gap: 2px 7px;
+  }
+
+  .habit-meta__item + .habit-meta__item::before {
+    margin-right: 3px;
+  }
+
+  .habit-quick {
+    width: 25px;
+    height: 25px;
+  }
+
+  .habit-pin {
+    width: 24px;
+    height: 24px;
+  }
+
+  .today__footer {
+    margin-top: 17px;
+    padding-top: 13px;
+  }
+
+  .today__footer-note {
+    display: none;
+  }
+
+  .footer {
+    gap: 6px;
+  }
+
+  .footer__hint {
+    display: none;
+  }
+
+  .footer__spacer {
+    display: none;
+  }
+
+  .footer__dot {
+    display: none;
+  }
+
+  .footer > span:last-of-type {
+    margin-left: auto;
+  }
+
+  .modal-panel--sheet {
+    width: 100vw;
+    border: none;
+  }
+
+  .sheet__head {
+    padding: 21px 20px 14px;
+  }
+
+  .sheet__head h2 {
+    font-size: 28px;
+  }
+
+  .settings-tabs {
+    padding: 0 12px;
+  }
+
+  .sheet__body {
+    padding: 0 20px 22px;
+  }
+
+  .sheet__foot {
+    padding: 12px 20px;
+  }
+
+  .theme-picker {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-card {
+    grid-template-columns: 49px minmax(0, 1fr);
+  }
+
+  .theme-card__preview {
+    width: 49px;
+    height: 43px;
+  }
+
+  .onboarding-modal {
+    width: calc(100vw - 24px);
+    max-height: calc(100dvh - 24px);
+  }
+
+  .onboarding {
+    grid-template-columns: 1fr;
+    max-height: calc(100dvh - 24px);
+    min-height: 0;
+    overflow-y: auto;
+  }
+
+  .onboarding__aside {
+    min-height: 0;
+    padding: 25px 24px 20px;
+    border-right: none;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .onboarding__aside h2 {
+    font-size: 2.7rem;
+  }
+
+  .onboarding__aside > p:not(.eyebrow) {
+    max-width: 48ch;
+    margin-top: 10px;
+  }
+
+  .onboarding__steps {
+    flex-direction: row;
+    gap: 14px;
+    padding-top: 17px;
+  }
+
+  .onboarding__mark {
+    display: none;
+  }
+
+  .onboarding__pane {
+    padding: 24px 20px 18px;
+    overflow: visible;
+  }
+
+  .onboarding__foot {
+    padding: 13px 20px;
+    position: sticky;
+    bottom: 0;
+  }
+
+  .onboarding__head h3 {
+    font-size: 2rem;
+  }
+
+  .onboarding__inline {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .modal-backdrop:has(.modal-panel--center) {
+    padding: 12px;
+  }
+
+  .auth-panel {
+    padding: 23px 20px;
+  }
+
+  .auth-panel__head h2 {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (max-width: 540px) {
+  .brand__sub {
+    display: none;
+  }
+
+  .brand__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .brand__text {
+    font-size: 13px;
+  }
+
+  .topbar__actions {
+    gap: 5px;
+  }
+
+  .weather-pill {
+    padding: 0 10px;
+  }
+
+  .weather-pill__condition {
+    display: none;
+  }
+
+  .weather-pill__temp {
+    font-size: 10.5px;
+  }
+
+  .account-button {
+    width: 34px;
+    height: 34px;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .account-button__label {
+    display: none;
+  }
+
+  .clock {
+    font-size: clamp(4.1rem, 21vw, 6.1rem);
+  }
+
+  .clock__meridiem {
+    font-size: 8px;
+    padding-left: 6px;
+    margin-left: 6px;
+  }
+
+  .greeting {
+    font-size: 1rem;
+  }
+
+  .weather-line__detail:last-child {
+    display: none;
+  }
+
+  .today__head {
+    flex-wrap: wrap;
+  }
+
+  .today__tools {
+    margin-left: auto;
+  }
+
+  .today__sub {
+    max-width: 32ch;
+  }
+
+  .habit-badge {
+    font-size: 7px;
+  }
+
+  .habit-row {
+    grid-template-columns: 26px minmax(0, 1fr) auto;
+    gap: 8px;
+  }
+
+  .habit-check {
+    width: 26px;
+    height: 26px;
+  }
+
+  .habit-name {
+    font-size: 12px;
+    white-space: normal;
+  }
+
+  .habit-pin {
+    display: none;
+  }
+
+  .amount-form__control {
+    flex-wrap: wrap;
+  }
+
+  .range-row {
+    grid-template-columns: 1fr;
+    gap: 9px;
+  }
+
+  .bg-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .engine-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .theme-picker {
+    grid-template-columns: 1fr;
+  }
+
+  .onboarding__aside h2 {
+    font-size: 2.4rem;
+  }
+
+  .onboarding__steps {
+    gap: 9px;
+  }
+
+  .onboarding__step {
+    font-size: 7px;
+  }
+
+  .onboarding__step > span {
+    width: 17px;
+    height: 17px;
+  }
+
+  .onboarding__pane {
+    padding: 20px 16px 14px;
+  }
+
+  .onboarding__foot {
+    padding: 12px 16px;
+  }
+
+  .onboarding__foot .button {
+    padding-inline: 11px;
+    font-size: 10px;
+  }
+
+  .onboarding__weather-head {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .onboarding__weather-head .segmented {
+    width: 100%;
+  }
+
+  .toast__message {
+    max-width: 200px;
+  }
+
+  .footer {
+    font-size: 7.5px;
+  }
+}
+
+@media (max-width: 430px) {
+  .weather-pill {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .weather-pill__temp,
+  .weather-pill__condition,
+  .weather-pill__place,
+  .weather-pill > span:not([class]) {
+    display: none;
+  }
+}
+
+@media (max-height: 760px) and (min-width: 761px) {
+  .stage--focus {
+    padding-top: 36px;
+  }
+
+  .stage--dashboard {
+    padding-top: 38px;
+  }
+
+  .clock {
+    font-size: clamp(4.8rem, 10vw, 8rem);
+  }
+
+  .today {
+    margin-top: 34px;
+  }
+
+  .stage--dashboard .today {
+    margin-top: 0;
+  }
+
+  .footer {
+    padding-top: 15px;
+  }
+}
+
+@media (max-height: 660px) {
+  .onboarding {
+    min-height: 0;
+  }
+
+  .onboarding__aside h2 {
+    font-size: 2.5rem;
+  }
+
+  .onboarding__steps {
+    padding-top: 18px;
+  }
+}
